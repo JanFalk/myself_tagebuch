@@ -1,14 +1,13 @@
 #Includes
 import tkinter as win
 import time
+import sys
 
 #Globale Variablen
 UserName="Jan Falk"
-FileName="jf01."
+FileName="jf01.csv"
 FilePath=""
-StrItems=6
-BoolItems=0
-IntItems=1
+NumberOfDays=1
 
 #Data Functions
 
@@ -24,20 +23,39 @@ def CopyDay(SourceDay, NewDate):
 
 def LoadData(FileName):
     #Should Return List of Days
-    #return Data
 
     #Load from File to Str
-
+    try:
+        my_file = open(FileName)
+    except:
+        print ("Load File failed")
+        sys.exit(0)
+    Str=my_file.read()
+    my_file.close()
     #Convert to List
-
+    Lst1=Str.split(chr(10))
+    #Remove Number of Saved Days from List
+    NumberOfDays=Lst1.pop[0]
     #Split into Days
+    Lst2=[]
+    DayCounter=0
+    for i in Lst1:
+        if 
 
+    
     #Add missing days until Date Of Execution
 
     pass
 
 def SaveData(FileName, Data):
     #Should Take List of Days
+
+    #Delete all Semicolons!
+
+    #Pack into Semicolon-Diverted Str
+
+    #Write to file
+
     pass
 
 #FrontEnd Functions for Windows Version
