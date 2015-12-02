@@ -7,7 +7,7 @@ FileName="JF01"
 FilePath=""
 StrItems=6
 BoolItems=0
-IntItems=12
+IntItems=1
 
 #Data Functions
 
